@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="language" content="en"/>
+        <meta name="location" content="us"/>
+        <meta name="robots" content="nofollow,noindex,noarchive"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rexel - Code Challenge - Joe Garber</title>
+        <link rel="stylesheet" href="index.css">
+        <!--link rel="dns-prefetch" href="///cdn.jsdelivr.net/">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script -->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <!--[if lte IE 9]>
+        <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+        <![endif]-->
+        <style>@-ms-viewport{width:device-width;}</style>
+        <script src="https://kit.fontawesome.com/4ecfd4fc3a.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <header>
+                    <span class="nav-left">
+                        <img src="img/logo.png" alt="Platt" width="120" height="23">
+                    </span>
+                    <span class="nav-right">
+                        <!-- The icons should be fonts not images. Fonts render more clean, scallable and colorized via CSS rules -->
+                        <span><a href="#" class="icon ic-search-white" alt="search icon"></a></span>
+                        <span><a href="#" class="icon ic-shopping-cart-white" alt="cart icon"></a></span>
+                        <span><a href="#" class="icon ic-person-white" alt="account icon"></a></span>
+                        <span><a href="#" class="icon ic-menu-white" alt="menu icon"></a></span>
+                    </span>
+                    <nav id="mega-menu"></nav>
+                </header>
+                <form id="search" action="search.php" method="post">
+                    <div class="wrapper">
+                        <input type="text" name="s" value="" placeholder="What are you looking for?" autofocus>
+                    </div>                
+                    <button class="btn-search"><i class="icon ic-search-black"></i></button>
+                </form>
+                <section id="cart"></section>
+                <section id="man"></section>
+            </div>
+
+            <ul id="categories">
+                <li><div class="item"><a href="#" class="icon ic-categories-black" alt="categories icon">Shop all categories<span class="icon ic-arrow-forward-black"></span></a></div></li>
+                <li><div class="item"><a href="#" class="icon ic-playlist-add-check-black" alt="list icon">My Catalog<span class="icon ic-arrow-forward-black"></span></a></div></li>
+                <li><div class="item"><a href="#" class="icon ic-list-black" alt="list icon">My List<span class="icon ic-arrow-forward-black"></span></a></div></li>
+                <li><div class="item"><a href="#" class="icon ic-chat-black help active" alt="help icon">Live Help<span class="icon ic-arrow-forward-black"></span></a></div></li>
+                <li><div class="item"><a href="#" class="icon ic-check-circle-black" alt="check icon">PIM<span class="icon ic-arrow-forward-black"></span></a></div></li>
+                <li><div class="item"><a href="#" class="icon ic-person-black" alt="person icon">Account<span class="icon ic-arrow-forward-black"></span></a></div></li>
+                <li><div class="item"><a href="#" class="icon ic-place-black" alt="place icon">Branch Locations<span class="icon ic-arrow-forward-black"></span></a></div></li>
+            </ul>
+
+
+            
+
+            <ul id="panels">
+                <li>
+                    <section id="functions">
+                        <ul class="mobile">
+                            <li><a href="#"><div class="circle"><div class="icon ic-line-style-green" alt="categories button"></div></div><div>Categories</div></a></li>
+                            <li><a href="#"><div class="circle"><div class="icon ic-search-green" alt="search button"></div></div><div>Search</div></a></li>
+                            <li><a href="#"><div class="circle"><div class="icon ic-scanner-green" alt="scan button"></div></div><div>Scan</div></a></li>
+                        </ul>
+                        <table class="desktop">
+                            <tr>
+                                <td>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="img/datacomm.png" alt="DataComm">
+                                            <figcaption><div class="label">DataComm</div></figcaption>
+                                        </a>
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="img/hvac.png" alt="DataComm">
+                                            <figcaption><div class="label">HVAC</div></figcaption>
+                                        </a>
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="img/industrial.png" alt="DataComm">
+                                            <figcaption><div class="label">Industrial</div></figcaption>
+                                        </a>
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="img/lighting.png" alt="DataComm">
+                                            <figcaption><div class="label">Lighting</div></figcaption>
+                                        </a>
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <a href="#">
+                                        <img src="img/energy.png" alt="DataComm">
+                                        <figcaption><div class="label">Energy Efficiency</div></figcaption>
+                                    </a>
+                                    </figure>
+                                </td>
+                                <td>
+                                    <figure>
+                                        <a href="#">
+                                            <img src="img/utility.png" alt="DataComm">
+                                            <figcaption><div class="label">Utility</div></figcaption>
+                                        </a>
+                                    </figure>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                </li>
+
+                <li id="get-started">
+                    <ul class="box-shadow">
+                        <li><figure><img src="img/platt-plus.png"></figure></li>
+                        <li class="outer-box">
+                            <div class="inner-box">
+                                <h1>Get Started Today</h1>
+                                <h2>Become a <i>Platt Plus</i> Member.</h2>
+                                <div><a href="#" class="button">Learn More</a></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li id="deals"><figure  class="box-shadow"><img src="panel/deal.png"></figure></li>
+
+                <li id="recent">
+                    <div class="box-shadow">
+                        <div class="box-shadow-padding">
+                            <span class="nav-left">Recently Viewed</span>
+                            <span class="nav-right"><a href="#" class="mid-green">View All</a></span>
+                            <ul>
+                                <li><figure><img src="recent/11.png"></figure></li>
+                                <li><figure><img src="recent/22.png"></figure></li>
+                                <li><figure><img src="recent/22.png"></figure></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li id="pack4">
+                    <ul>
+                        <li>
+                            <figure class="box-shadow"><a href="#" class="outer-box"><div class="inner-box"><img src="img/super-tool-day.png"></div>
+                                    <p>Super tool Day &amp; Dynamic Data Day</p>
+                                </a></figure>
+                        </li>
+                        <li>
+                            <figure class="box-shadow"><a href="#" class="outer-box"><div class="inner-box"><img src="img/ic_location_b.png"></div>
+                                    <p>Branch Locations</p>
+                                </a></figure>
+                        </li>
+                        <li>
+                            <figure class="box-shadow"><a href="#" class="outer-box"><div class="inner-box"><img src="img/ic_helpcenter.png"></div>
+                                    <p>Help Center</p>
+                                </a></figure>
+                        </li>
+                        <li>
+                            <figure class="box-shadow"><a href="#" class="outer-box"><div class="inner-box"><img src="img/ic_platt-u.png"></div>
+                                    <p>Platt University</p>
+                                </a></figure>
+                        </li>
+                    </ul>
+                </li>
+
+                <li id="banner"><figure id="app-store" class="box-shadow" style="background-image: url(panel/app-get-banner.png);"><!--img src="panel/app-get-banner.png"--></figure></li>
+            </ul>
+            
+
+            
+
+            <!--main>
+                    <div id="app">
+                        {{ message }}
+                    </div>
+            </main-->
+
+            <footer>
+                <h1 class="white">Support Center</h1>
+                <h1 class="white">800-25-Platt
+                    <div>800-257-5288</div>
+                </h1>
+                <h1 class="mid-grey">
+                    4 a.m. - 12 a.m. (pst)<br>
+                    7 Days a week
+                </h1>
+                <div class="button"><span class="icon ic-comment-black"></span>Live Help</div>
+
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                </ul>
+            </footer>
+
+
+
+
+            
+        
+        </div>
+        <!--script src="index.js"></script-->
+    </body>
+</html>
